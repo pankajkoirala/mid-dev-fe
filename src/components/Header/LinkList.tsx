@@ -3,17 +3,13 @@ import { cn } from "@/utils/cn";
 import Link from "../Link";
 import { Typography } from "../typography";
 import { usePathname } from "next/navigation";
+import { links } from "@/constant/navList";
 
 const LinkList = () => {
   const pathname=usePathname()
   const currentPath=pathname.split("/").filter(e=>e)[0]
   
-  const links = [
-    { link: "HOME", path: "home" },
-    { link: "PRODUCT", path: "product" },
-    { link: "CATEGORY", path: "category" },
-    { link: "CONTACT US", path: "contactUs" },
-  ];
+
 
   return (
     <div 

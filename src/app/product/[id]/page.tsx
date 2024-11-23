@@ -1,5 +1,6 @@
 import { ResponseType } from "@/types/axiosTypes";
 import { Product } from "@/types/productTypes";
+import { ProductDetailCard } from "./_components/PrductDetailsCard";
 import { cn } from "@/utils/cn";
 import Container from "@/container/container";
 
@@ -43,7 +44,8 @@ export default async function ProductById({
   return (
     <Container>
     <div className={cn(['w-full flex gap-3', 'md:gap-4', 'lg:gap-4'])}>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nihil veniam beatae impedit asperiores odio, quisquam porro sapiente dignissimos culpa laborum perspiciatis neque praesentium quaerat perferendis doloribus doloremque ducimus expedita.    </div>
+      <ProductDetailCard product={data?.product as Product} />
+    </div>
    
     </Container>
   );
