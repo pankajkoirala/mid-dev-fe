@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-import Link from "../link";
+import Link from "../Link";
 import { Typography } from "../typography";
 
 const LinkList = () => {
@@ -14,16 +14,20 @@ const LinkList = () => {
     <div 
     className={cn([
           "hidden",
-          "md:flex  md:items-center md:justify-between md:w-full px-4",
-          "lg:flex lg:items-center lg:justify-between  lg:w-[60%] px-4",
+          "md:flex  md:items-center md:gap-4  md:w-full px-4",
+          "lg:flex lg:items-center lg:gap-4 lg:w-[60%] px-4",
         ])}
         >
       {links.map((e) => (
         <Link
           key={e?.link}
           href="/home"
+          
         >
+          <div className="px-4">
+
           <Typography variant={"s1"}>{e?.link}</Typography>
+          </div>
         </Link>
       ))}
     </div>
