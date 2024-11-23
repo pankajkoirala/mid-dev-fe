@@ -1,13 +1,18 @@
+"use client"
 import { cn } from "@/utils/cn";
 import Link from "../Link";
 import { Typography } from "../typography";
+import { usePathname } from "next/navigation";
 
 const LinkList = () => {
+  const pathname=usePathname()
+  const currentPath=pathname.split("/").filter(e=>e)[0]
+  
   const links = [
-    { link: "HOME", path: "" },
-    { link: "PRODUCTS", path: "" },
-    { link: "CATEGORY", path: "" },
-    { link: "CONTACT US", path: "" },
+    { link: "HOME", path: "home" },
+    { link: "PRODUCT", path: "product" },
+    { link: "CATEGORY", path: "category" },
+    { link: "CONTACT US", path: "contactUs" },
   ];
 
   return (
@@ -21,10 +26,10 @@ const LinkList = () => {
       {links.map((e) => (
         <Link
           key={e?.link}
-          href="/home"
+          href={e.path}
           
         >
-          <div className="px-4">
+          <div className={cn("px-4 pb-1 ",{"border-b-4 border-red-400":e.path===currentPath})}>
 
           <Typography variant={"s1"}>{e?.link}</Typography>
           </div>

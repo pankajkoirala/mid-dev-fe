@@ -1,3 +1,4 @@
+import Card from "@/components/Card";
 import CardSkeleton from "@/components/Card/cardSkeleton";
 import Container from "@/container/container";
 import { WithPaginationResponseType } from "@/types/axiosTypes";
@@ -60,7 +61,22 @@ export default async function Home() {
 
   return (
     <Container>
-   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt ad perferendis ipsam nam dicta ex dignissimos, enim dolor accusamus architecto aperiam voluptatem temporibus libero fugiat ut eum eius sunt sequi.
+      <div
+        className={cn([
+          [
+            "grid w-full",
+            "gap-2 grid-cols-1",
+            "sm:gap-2 sm:grid-cols-2",
+            "md:grid md:gap-x-2 gap-y-2 md:grid-cols-3",
+            "lg:grid lg:gap-x-2 gap-y-2 lg:grid-cols-4",
+          ],
+        ])}
+      >
+        {data?.products?.products?.map((product: Product) => (
+          // />
+          <Card key={product?.id} product={product} />
+        ))}
+      </div>
     </Container>
   );
 }

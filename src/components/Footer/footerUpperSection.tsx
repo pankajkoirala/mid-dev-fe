@@ -2,6 +2,7 @@ import { cn } from "@/utils/cn";
 import { Input } from "../Input";
 import { Search } from "lucide-react";
 import { Typography } from "../typography";
+import { Button } from "../Button";
 
 const UpperFooter = () => {
   return (
@@ -42,9 +43,9 @@ const UpperFooter = () => {
 
           // "relative flex items-center max-w-[400px]"
         >
-          <Search className="text-gray-200 absolute left-2" />
+          <Button className="text-gray-200 absolute right-0 w-[100px] rounded-full" >Send</Button>
           <Input
-            placeholder="Search"
+            placeholder="Email Address"
             className={cn(["rounded-full border-none pl-10 text-text-dark"])}
             autoFocus
           />

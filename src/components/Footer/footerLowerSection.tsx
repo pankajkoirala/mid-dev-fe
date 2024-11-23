@@ -1,6 +1,9 @@
 import { cn } from "@/utils/cn";
 import { Typography } from "../typography";
 import Image from "next/image";
+import { Button } from "../Button";
+import { Icon } from "../Icon";
+import Link from "../Link";
 
 const LowerFooter = () => {
   return (
@@ -81,20 +84,38 @@ const LowerFooter = () => {
             Quick Links
           </Typography>
           <div className="flex flex-col gap-2">
-            <Typography variant={"p4"} className="font-semibold text-text-dark">
-              COntact Us
+            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+              <Link href="/contactUs">
+              Contact Us
+              </Link>
             </Typography>
-            <Typography variant={"p4"} className="font-semibold text-text-dark">
+            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Link href="/contactUs">
+
               FAQs
+              </Link>
+
             </Typography>{" "}
-            <Typography variant={"p4"} className="font-semibold text-text-dark">
+            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Link href="/contactUs">
+
               Blogs
+              </Link>
+
             </Typography>{" "}
-            <Typography variant={"p4"} className="font-semibold text-text-dark">
+            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Link href="/contactUs">
+
               Gallery
+              </Link>
+
             </Typography>
-            <Typography variant={"p4"} className="font-semibold text-text-dark">
+            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Link href="/contactUs">
+
               Pricing
+              </Link>
+
             </Typography>
           </div>
         </div>
@@ -133,6 +154,9 @@ const LowerFooter = () => {
             <Typography variant={"p4"} className="text-text-dark">
               9843765501/9843625254
             </Typography>
+            <Button className="w-fit rounded-full">
+              <Icon icon="Phone" className="h-6 w-6" />
+               Call us</Button>
           </div>
         </div>
       </div>
