@@ -118,6 +118,7 @@ export const ProductDetailCard = ({product}:{product:Product}) => {
                 icon="Info"
                 variant={'ghost'}
                 className="text-white "
+                iconClassName='text-white'
                 size={'sm'}
               />
             </div>
@@ -126,6 +127,7 @@ export const ProductDetailCard = ({product}:{product:Product}) => {
               <Icon
                 icon="Shield"
                 className="text-white "
+                
               />
               <Typography variant={'p5'}>
                 {product?.warrantyInformation} 
@@ -161,6 +163,8 @@ export const ProductDetailCard = ({product}:{product:Product}) => {
                 variant={'ghost'}
                 className="text-white "
                 size={'sm'}
+                iconClassName='text-white'
+
               />
             </div>
             <div className="flex gap-2 px-3">
