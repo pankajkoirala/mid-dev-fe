@@ -1,6 +1,6 @@
 import { VariantProps, cva } from "class-variance-authority"
 import { forwardRef } from "react"
-import { cn } from "@/shared/utils/cn"
+import { cn } from "@/utils/cn"
 
 type TVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span"
 
@@ -11,7 +11,7 @@ interface TypographyProps<T> extends VariantProps<typeof typographyVariants> {
 type Props<T extends React.ElementType> = TypographyProps<T> &
   Omit<React.ComponentPropsWithoutRef<T>, keyof TypographyProps<T>>
 
-export const typographyVariants = cva("text-black dark:text-white", {
+export const typographyVariants = cva("text-text-dark", {
   variants: {
     variant: {
       h1: "text-[2.5rem] leading-[3rem] font-semibold",

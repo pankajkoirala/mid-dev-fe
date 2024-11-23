@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/shared/utils/cn";
+import { cn } from "@/utils/cn";
 import { Button } from "../Button";
 import { Avatar } from "../Avatar";
 

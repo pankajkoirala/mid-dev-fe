@@ -1,4 +1,4 @@
-import { Product, WithPaginationResponseType } from "@/shared/types/types";
+import { Product, WithPaginationResponseType } from "@/types/types";
 
 
   const serverSideGetProducts = async () => {

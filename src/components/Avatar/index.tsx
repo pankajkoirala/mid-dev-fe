@@ -5,7 +5,7 @@ import {
   AvatarImage,
   Avatar as ShadcnAvatar,
 } from "./AvatarComponentindex"
-import { generateAvatarName } from "@/shared/utils/avatar-name"
+import { generateAvatarName } from "@/utils/avatar-name"
 
 export interface AvatarProps extends ShadcnAvatarProps {
   shape?: "circle" | "square"

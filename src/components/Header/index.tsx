@@ -1,11 +1,11 @@
 import Logo from "./logo";
 import Notifications from "./notification";
-import { cn } from "@/shared/utils/cn";
 import User from "./user-action";
 import Cart from "./cart";
 import NavSearch from "./search";
 import LinkList from "./LinkList";
 import Hamburger from "./Hamburger";
+import { cn } from "@/utils/cn";
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
     >
       <nav
         className={cn([
-          "h-full px-6 py-4 flex items-center gap-2 w-full ",
+          "h-full px-8 py-4 flex items-center gap-2 w-full ",
           "md:px-6 md:py-4 md:gap-8 md:flex md:items-center",
           "lg:px-6 md:py-4  lg:gap-8 lg:md:flex  lg:items-center",
         ])}

@@ -1,4 +1,4 @@
-import { Product, ResponseType } from "@/shared/types/types";
+import { Product, ResponseType } from "@/types/types";
 
 
   const serverSideGetProductById = async (params:string) => {

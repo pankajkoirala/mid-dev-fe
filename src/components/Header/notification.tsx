@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/shared/utils/cn";
+import { cn } from "@/utils/cn";
 
 import { Bell } from "lucide-react";
 import { Typography } from "../typography";
