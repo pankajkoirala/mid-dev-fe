@@ -3,6 +3,7 @@ import { Product } from "@/types/productTypes";
 import { ProductDetailCard } from "./_components/PrductDetailsCard";
 import { cn } from "@/utils/cn";
 import Container from "@/container/container";
+import ErrorCard from "@/components/ErrorCard";
 
 const serverSideGetProductById = async (params: string) => {
   const url = `${process.env.NEXT_BASE_API_URL}/product/${params}`;
@@ -28,7 +29,7 @@ const serverSideGetProductById = async (params: string) => {
   }
 };
 
-export default async function ProductById({
+export default async function ProductDetailPage({
   params,
 }: {
   params: Promise<{ id: string }>;
@@ -38,7 +39,7 @@ export default async function ProductById({
   const data = await serverSideGetProductById(id);
 
   if (data.error) {
-    return <p>Error: {data?.error}</p>;
+    return <ErrorCard errormessage={data?.error}/>;
   }
 
   return (

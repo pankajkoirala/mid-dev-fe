@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import CardSkeleton from "@/components/Card/cardSkeleton";
+import ErrorCard from "@/components/ErrorCard";
 import Container from "@/container/container";
 import { WithPaginationResponseType } from "@/types/axiosTypes";
 import { Product } from "@/types/productTypes";
@@ -31,10 +32,10 @@ const serverSideGetProducts = async () => {
   }
 };
 
-export default async function Home() {
+export default async function ProductPage() {
   const data = await serverSideGetProducts();
   if (data.error) {
-    return <p className="">Error: {data?.error}</p>;
+    return <ErrorCard errormessage={data?.error}/>;
   }
 
   if (!data?.products&&!data.error) {
