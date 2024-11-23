@@ -27,6 +27,7 @@ stock,
     // discountPercentage,
     rating,
     // tags,
+    discountPercentage
   } = product;
 
   return (
@@ -61,7 +62,7 @@ stock,
                 variant={"p6"}
                 className="text-black/50 dark:text-white/50 "
               >
-                {rating}/5 (456) {stock ?? 100} sold
+                {Math.ceil(rating)}/5 (456) {stock ?? 100} sold
               </Typography>
             </div>
             <div className="flex gap-2">
@@ -78,14 +79,15 @@ stock,
             </div>
             <div className="flex gap-2 items-baseline">
               <Typography variant={"h5"} className="font-bold dark:text-white ">
-                Rs.100
+                Rs.{price}
               </Typography>
           
                 <Typography
                   variant={"s1"}
                   className="dark:text-white/50 font-bold text-black/50 line-through"
                 >
-                  Rs.{price ?? 0}
+                  Rs{((price * discountPercentage) / 100).toFixed(2)}
+
                 </Typography>
             
             </div>
@@ -96,14 +98,14 @@ stock,
               icon="ShoppingCart"
               variant={"unstyled"}
               strokeWidth={2}
-              iconClassName="hover:text-primary dark:hover:text-primary"
+              iconClassName="hover:text-primary dark:hover:text-white"
             />
             <IconButton
               className="rounded-full p-0 dark:text-white hover:text-primary"
               icon="Heart"
               variant={"unstyled"}
               strokeWidth={2}
-              iconClassName="hover:text-primary dark:hover:text-primary"
+              iconClassName="hover:text-primary dark:hover:text-white"
             />
             <IconButton
               className="rounded-full p-0 dark:text-white hover:text-primary"
@@ -113,7 +115,7 @@ stock,
               onClick={(e)=>{
                 e.stopPropagation()
                 viewState.onOpen()}}
-              iconClassName="hover:text-primary dark:hover:text-primary"
+              iconClassName="hover:text-primary dark:hover:text-white"
             />
           </div>
         </div>

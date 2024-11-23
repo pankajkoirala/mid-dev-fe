@@ -35,7 +35,8 @@ const serverSideGetProducts = async () => {
 export default async function ProductPage() {
   const data = await serverSideGetProducts();
   if (data.error) {
-    return <ErrorCard errormessage={data?.error}/>;
+    return       <Container >
+ <ErrorCard errormessage={data?.error}/></Container>
   }
 
   if (!data?.products&&!data.error) {

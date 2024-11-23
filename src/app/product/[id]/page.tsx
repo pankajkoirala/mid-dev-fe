@@ -39,7 +39,8 @@ export default async function ProductDetailPage({
   const data = await serverSideGetProductById(id);
 
   if (data.error) {
-    return <ErrorCard errormessage={data?.error}/>;
+    return  <Container >
+ <ErrorCard errormessage={data?.error}/></Container>
   }
 
   return (

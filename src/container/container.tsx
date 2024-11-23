@@ -5,7 +5,7 @@ export default function Container({className,children}:{className?:string,childr
   return (
 
     <div    className={cn(
-        "p-6 bg-secondary",
+        "p-4 bg-secondary",
         className
       )}>
         {children}
