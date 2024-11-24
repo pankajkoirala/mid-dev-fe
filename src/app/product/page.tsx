@@ -35,29 +35,32 @@ const serverSideGetProducts = async () => {
 export default async function ProductPage() {
   const data = await serverSideGetProducts();
   if (data.error) {
-    return       <Container >
- <ErrorCard errormessage={data?.error}/></Container>
+    return (
+      <Container>
+        <ErrorCard errormessage={data?.error} />
+      </Container>
+    );
   }
 
-  if (!data?.products&&!data.error) {
+  if (!data?.products && !data.error) {
     return (
-      <Container >
-      <div
-        className={cn([
-          [
-            "grid w-full",
-            "gap-2 grid-cols-1",
-            "sm:gap-2 sm:grid-cols-2",
-            "md:grid md:gap-x-2 gap-y-2 md:grid-cols-3",
-            "lg:grid lg:gap-x-2 gap-y-2 lg:grid-cols-4",
-          ],
-        ])}
-      >
-        {[1, 2, 3,4,5,6,7,8]?.map((i) => (
-          <CardSkeleton key={i} />
-        ))}
-      </div>
-        </Container>
+      <Container>
+        <div
+          className={cn([
+            [
+              "grid w-full",
+              "gap-2 grid-cols-1",
+              "sm:gap-2 sm:grid-cols-2",
+              "md:grid md:gap-x-2 gap-y-2 md:grid-cols-3",
+              "lg:grid lg:gap-x-2 gap-y-2 lg:grid-cols-4",
+            ],
+          ])}
+        >
+          {[1, 2, 3, 4, 5, 6, 7, 8]?.map((i) => (
+            <CardSkeleton key={i} />
+          ))}
+        </div>
+      </Container>
     );
   }
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Typography } from "../typography";
 import { Icon } from "../Icon";
 import { IconButton } from "../Iconbutton";
-import { useDisclosure } from "@/app/hooks/use-disclosure";
+import { useDisclosure } from "@/hooks/use-disclosure";
 import Link from "../Link";
 import { cn } from "@/utils/cn";
 
