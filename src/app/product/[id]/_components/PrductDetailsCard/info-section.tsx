@@ -38,6 +38,12 @@ export const InfoSection = ({ product }: { product: Product }) => {
         </div>
         <div className="flex flex-col gap-1">
             <div className="flex gap-2 items-center">
+              <div className="flex gap-0.5">
+
+              {Array.from({ length: Math.ceil(product?.rating) }, (_, index) => index).map((e)=>(
+                <Icon key={e} icon="Star" className="h-4 w-4 text-primary"/>
+              ))}
+              </div>
               <Rating
                 count={Math.ceil(product?.rating)}
                 readOnly
@@ -45,6 +51,7 @@ export const InfoSection = ({ product }: { product: Product }) => {
                 spacing="2px"
                 size={"12px"}
               />
+
               <Typography className="text-link" variant={"p5"}>
                 {product?.rating} Ratings {product?.reviews?.length} Answered
                 Questions
