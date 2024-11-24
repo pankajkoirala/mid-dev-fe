@@ -7,12 +7,10 @@ import { cn } from "@/utils/cn";
 import { Rating } from "react-custom-rating-component";
 import { useState } from "react";
 import { Product } from "@/types/productTypes";
-import Image from "next/image";
 import SectionContainer from "@/container/sectionContainer";
 
 export const InfoSection = ({ product }: { product: Product }) => {
   const [orderQuantity, setOrderQuantity] = useState(1);
-  const [selectedSize, setSelectedSize] = useState("");
 
   return (
     <SectionContainer >
@@ -79,7 +77,7 @@ export const InfoSection = ({ product }: { product: Product }) => {
         </Typography>
       </div>
       <div className="flex gap-3 items-center">
-        <Typography className="text-black/50" variant={"p5"}>
+        <Typography className="text-text-body" variant={"p5"}>
           Quantity:
         </Typography>
         <IconButton

@@ -60,7 +60,7 @@ stock,
               <Icon icon="Star" className="text-red-700 dark:text-white " />
               <Typography
                 variant={"p6"}
-                className="text-black/50 dark:text-white/50 "
+                className="text-text-dark"
               >
                 {Math.ceil(rating)}/5 (456) {stock ?? 100} sold
               </Typography>
@@ -84,7 +84,7 @@ stock,
           
                 <Typography
                   variant={"s1"}
-                  className="dark:text-white/50 font-bold text-black/50 line-through"
+                  className=" font-bold text-text-body line-through"
                 >
                   Rs{((price * discountPercentage) / 100).toFixed(2)}
 

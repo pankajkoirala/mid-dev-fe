@@ -63,7 +63,7 @@ export const ProductDetailCard = ({product}:{product:Product}) => {
                 <Typography variant={'p5'}> CHANGE</Typography>
               </Button>
             </div>
-            <Separator className="bg-border dark:bg-white/50" />
+            <Separator className="bg-border " />
             <div className="flex justify-between px-3 items-center">
               <div className="flex gap-2 ">
                 <Icon
@@ -88,7 +88,7 @@ export const ProductDetailCard = ({product}:{product:Product}) => {
               <Typography variant={'p5'}>Cash on delivery available</Typography>
             </div>
           </div>
-          <Separator className="bg-border dark:bg-white/50" />
+          <Separator className="bg-border " />
           <div className="flex flex-col gap-3 ">
             <Typography
               variant={'p5'}
@@ -134,7 +134,7 @@ export const ProductDetailCard = ({product}:{product:Product}) => {
               </Typography>
             </div>
           </div>
-          <Separator className="bg-border dark:bg-white/50" />
+          <Separator className="bg-border " />
           <div className="flex flex-col gap-3 ">
             <Typography
               variant={'p5'}
