@@ -33,11 +33,13 @@ stock,
   return (
       <div
         className={cn([
-          "group bg-white min-h-[240px] w-full rounded-sm shadow-base hover:shadow-md cursor-pointer",
+          "group bg-white min-h-[240px] w-full rounded-sm shadow-base hover:shadow-md ",
           "dark:bg-foreground overflow-hidden relative ",
           className,
         ])}
       >
+         <Link href={`/product/${product.id}`}>
+         
         <Image
           src={images?.[0]?? ""}
           alt="product-card"
@@ -46,6 +48,7 @@ stock,
           width={0}
           className="rounded-t-sm min-h-[180px] max-h-[180px] w-full object-cover cursor-pointer group-hover:scale-95 ease-in-out duration-75"
         />
+         </Link>
         <div className="flex p-3 justify-between bg-primary ">
           <div className=" flex flex-col gap-1">
           <Link href={`/product/${product.id}`}>

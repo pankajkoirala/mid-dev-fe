@@ -4,7 +4,6 @@ import { IconButton } from "@/components/Iconbutton";
 import { Separator } from "@/components/Separator";
 import { Typography } from "@/components/typography";
 import { cn } from "@/utils/cn";
-import { Rating } from "react-custom-rating-component";
 import { useState } from "react";
 import { Product } from "@/types/productTypes";
 import SectionContainer from "@/container/sectionContainer";
@@ -44,13 +43,7 @@ export const InfoSection = ({ product }: { product: Product }) => {
                 <Icon key={e} icon="Star" className="h-4 w-4 text-primary"/>
               ))}
               </div>
-              <Rating
-                count={Math.ceil(product?.rating)}
-                readOnly
-                defaultValue={product?.rating}
-                spacing="2px"
-                size={"12px"}
-              />
+             
 
               <Typography className="text-link" variant={"p5"}>
                 {product?.rating} Ratings {product?.reviews?.length} Answered
@@ -59,9 +52,9 @@ export const InfoSection = ({ product }: { product: Product }) => {
             </div>
            
           <div className="flex gap-2 items-center">
-            <Typography className="text-text-dark" variant={"p5"}>
+            {/* <Typography className="text-text-dark" variant={"p5"}>
               {product?.brand}
-            </Typography>
+            </Typography> */}
             <Typography className="" variant={"p5"}>
               {product?.description}
             </Typography>

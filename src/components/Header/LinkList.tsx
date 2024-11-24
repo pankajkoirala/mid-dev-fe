@@ -25,7 +25,7 @@ const LinkList = () => {
           href={e.path}
           
         >
-          <div className={cn("px-4 pb-1 ",{"border-b-4 border-red-400":e.path===currentPath})}>
+          <div className={cn("px-4 pb-1 ",{"border-b-4 border-red-400":e.path===`/${currentPath}`})}>
 
           <Typography variant={"s1"}>{e?.link}</Typography>
           </div>
