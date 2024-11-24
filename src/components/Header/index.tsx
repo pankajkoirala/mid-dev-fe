@@ -10,7 +10,7 @@ import { cn } from "@/utils/cn";
 const Header = () => {
   return (
     <header
-      className={"bg-primary  w-screen text-white sticky top-0 z-20 h-[60px] shadow-sm"}
+      className={"bg-primary  w-full text-white sticky top-0 z-20 h-[60px] shadow-sm"}
     >
       <nav
         className={cn([
