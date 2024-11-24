@@ -1,6 +1,5 @@
 import { cn } from "@/utils/cn";
 import { Input } from "../Input";
-import { Search } from "lucide-react";
 import { Typography } from "../typography";
 import { Button } from "../Button";
 

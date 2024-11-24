@@ -1,6 +1,5 @@
 "use client";
 
-import { useDisclosure } from "@/app/hooks/use-disclosure";
 import { cn } from "@/utils/cn";
 
 import { Product } from "@/types/productTypes";

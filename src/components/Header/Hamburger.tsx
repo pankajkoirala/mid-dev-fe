@@ -5,10 +5,8 @@ import { cn } from "@/utils/cn";
 import { Menu } from "lucide-react";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
+
   SheetHeader,
   SheetTitle,
   SheetTrigger,
