@@ -37,15 +37,15 @@ Ensure you have the following installed on your machine:
 2. Create a `.env` file in the root directory with the following content:
 
    ```env
-   PORT=3000
+   NEXT_BASE_API_URL=https://mid-dev-be.onrender.com/api
    ```
 
-   Replace `3000` with the desired port number if needed.
+   Replace backend endpoint `https://mid-dev-be.onrender.com/api` with the backend deployed endpoint if needed.
 
-3. Start the server:
+3. Start the application:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. Access the application in your browser at:
