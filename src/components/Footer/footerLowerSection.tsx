@@ -33,7 +33,7 @@ const LowerFooter = () => {
           />
         </div>
 
-        <Typography variant={"p4"} className="max-w-[300px]">
+        <Typography variant={"p4"} className="max-w-[300px] text-text-body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi
           cupiditate aliquam cumque, modi nesciunt nobis cum ea fugiat neque
         </Typography>
@@ -84,33 +84,33 @@ const LowerFooter = () => {
             Quick Links
           </Typography>
           <div className="flex flex-col gap-2">
-            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Typography variant={"p4"} className="font-semibold text-text-body hover:underline cursor-pointer">
               <Link href="/contactUs">
               Contact Us
               </Link>
             </Typography>
-            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Typography variant={"p4"} className="font-semibold text-text-body hover:underline cursor-pointer">
             <Link href="/contactUs">
 
               FAQs
               </Link>
 
             </Typography>{" "}
-            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Typography variant={"p4"} className="font-semibold text-text-body hover:underline cursor-pointer">
             <Link href="/contactUs">
 
               Blogs
               </Link>
 
             </Typography>{" "}
-            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Typography variant={"p4"} className="font-semibold text-text-body hover:underline cursor-pointer">
             <Link href="/contactUs">
 
               Gallery
               </Link>
 
             </Typography>
-            <Typography variant={"p4"} className="font-semibold text-text-dark hover:underline cursor-pointer">
+            <Typography variant={"p4"} className="font-semibold text-text-body hover:underline cursor-pointer">
             <Link href="/contactUs">
 
               Pricing
@@ -129,10 +129,10 @@ const LowerFooter = () => {
             Work Hours
           </Typography>
           <div className="flex flex-col gap-2">
-            <Typography variant={"p4"} className="font-semibold text-text-dark">
+            <Typography variant={"p4"} className="font-semibold text-text-body">
               7 AM -5 PM, Mon - Sat
             </Typography>
-            <Typography variant={"p4"} className="text-text-dark max-w-[300px]">
+            <Typography variant={"p4"} className="text-text-body max-w-[300px]">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quo
               exercitationem deleniti!
             </Typography>
@@ -148,10 +148,10 @@ const LowerFooter = () => {
             Contact
           </Typography>
           <div className="flex flex-col gap-2">
-            <Typography variant={"p4"} className="text-text-dark">
+            <Typography variant={"p4"} className="text-text-body">
               Manamaiju-12, Kathmandu
             </Typography>
-            <Typography variant={"p4"} className="text-text-dark">
+            <Typography variant={"p4"} className="text-text-body">
               9843765501/9843625254
             </Typography>
             <Button className="w-fit rounded-full">

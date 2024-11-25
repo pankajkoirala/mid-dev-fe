@@ -2,6 +2,8 @@ import Card from "@/components/Card";
 import CardSkeleton from "@/components/Card/cardSkeleton";
 import ErrorCard from "@/components/ErrorCard";
 import Container from "@/container/container";
+import Section from "@/container/section";
+import SectionContainer from "@/container/sectionContainer";
 import { WithPaginationResponseType } from "@/types/axiosTypes";
 import { Product } from "@/types/productTypes";
 import { cn } from "@/utils/cn";
@@ -66,22 +68,25 @@ export default async function ProductPage() {
 
   return (
     <Container>
-      <div
-        className={cn([
-          [
-            "grid w-full",
-            "gap-2 grid-cols-1",
-            "sm:gap-2 sm:grid-cols-2",
-            "md:grid md:gap-x-2 gap-y-2 md:grid-cols-3",
-            "lg:grid lg:gap-x-2 gap-y-2 lg:grid-cols-4",
-          ],
-        ])}
+      <SectionContainer>
+
+      <Section
+       sectionHeading="Category 1"
       >
         {data?.products?.products?.map((product: Product) => (
           // />
           <Card key={product?.id} product={product} />
         ))}
-      </div>
+      </Section>
+      <Section
+        sectionHeading="Category 2"
+      >
+        {data?.products?.products?.map((product: Product) => (
+          // />
+          <Card key={product?.id} product={product} />
+        ))}
+      </Section>
+      </SectionContainer>
     </Container>
   );
 }

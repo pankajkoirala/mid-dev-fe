@@ -34,7 +34,7 @@ stock,
       <div
         className={cn([
           "group bg-white min-h-[240px] w-full rounded-sm shadow-base hover:shadow-md ",
-          "dark:bg-foreground overflow-hidden relative ",
+          " overflow-hidden relative ",
           className,
         ])}
       >
@@ -54,13 +54,13 @@ stock,
           <Link href={`/product/${product.id}`}>
               <Typography
                 variant={"h5"}
-                className="dark:text-white  cursor-pointer"
+                className="text-white  cursor-pointer"
               >
                 {title ?? "Product Name"}
               </Typography>
             </Link>
             <div className="flex gap-1">
-              <Icon icon="Star" className="text-red-700 dark:text-white " />
+              <Icon icon="Star" className=" text-white " />
               <Typography
                 variant={"p6"}
                 className="text-text-dark"
@@ -69,19 +69,19 @@ stock,
               </Typography>
             </div>
             <div className="flex gap-2">
-              <div className="border border-border dark:border-white rounded py-0.5 px-1 w-fit">
-                <Typography variant={"p6"} className="dark:text-white ">
+              <div className="border border-border border-white rounded py-0.5 px-1 w-fit">
+                <Typography variant={"p6"} className="text-white ">
                   free delivery
                 </Typography>
               </div>
-              <div className="border border-border  dark:border-white  rounded py-0.5 px-1 w-fit">
-                <Typography variant={"p6"} className="dark:text-white">
+              <div className="border border-border  border-white  rounded py-0.5 px-1 w-fit">
+                <Typography variant={"p6"} className="text-white">
                   2 voucher
                 </Typography>
               </div>
             </div>
             <div className="flex gap-2 items-baseline">
-              <Typography variant={"h5"} className="font-bold dark:text-white ">
+              <Typography variant={"h5"} className="font-bold text-white ">
                 Rs.{price}
               </Typography>
           
@@ -97,28 +97,28 @@ stock,
           </div>
           <div className="flex flex-col justify-around">
             <IconButton
-              className=" rounded-full p-0 dark:text-white "
+              className=" rounded-full p-0 text-white "
               icon="ShoppingCart"
               variant={"unstyled"}
               strokeWidth={2}
-              iconClassName="hover:text-primary dark:hover:text-white"
+              iconClassName="hover:text-primary hover:text-white"
             />
             <IconButton
-              className="rounded-full p-0 dark:text-white hover:text-primary"
+              className="rounded-full p-0 text-white hover:text-primary"
               icon="Heart"
               variant={"unstyled"}
               strokeWidth={2}
-              iconClassName="hover:text-primary dark:hover:text-white"
+              iconClassName="hover:text-primary hover:text-white"
             />
             <IconButton
-              className="rounded-full p-0 dark:text-white hover:text-primary"
+              className="rounded-full p-0 text-white hover:text-primary"
               icon="Share"
               variant={"unstyled"}
               strokeWidth={2}
               onClick={(e)=>{
                 e.stopPropagation()
                 viewState.onOpen()}}
-              iconClassName="hover:text-primary dark:hover:text-white"
+              iconClassName="hover:text-primary hover:text-white"
             />
           </div>
         </div>

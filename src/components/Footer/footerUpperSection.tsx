@@ -22,7 +22,7 @@ const UpperFooter = () => {
         <Typography variant={"h3"}>Our News Letter</Typography>
         <Typography
           variant={"p4"}
-          className={cn(["w-full", "md:w-1/2 ", "lg:w-1/2 "])}
+          className={cn(["w-full text-text-body", "md:w-1/2 ", "lg:w-1/2 "])}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi
           cupiditate aliquam cumque,
@@ -45,11 +45,11 @@ const UpperFooter = () => {
           <Button className="text-gray-200 absolute right-0 w-[100px] rounded-full" >Send</Button>
           <Input
             placeholder="Email Address"
-            className={cn(["rounded-full border-none pl-10 text-text-dark"])}
+            className={cn(["rounded-full border-none  text-text-dark"])}
             autoFocus
           />
         </div>
-        <Typography variant={"p4"} className="font-semibold text-center">
+        <Typography variant={"p4"} className="font-semibold text-center text-text-body">
           www.mywebsite.com
         </Typography>
       </div>

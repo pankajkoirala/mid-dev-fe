@@ -55,7 +55,7 @@ export const InfoSection = ({ product }: { product: Product }) => {
             {/* <Typography className="text-text-dark" variant={"p5"}>
               {product?.brand}
             </Typography> */}
-            <Typography className="" variant={"p5"}>
+            <Typography className="text-text-body" variant={"p5"}>
               {product?.description}
             </Typography>
           </div>
@@ -70,7 +70,7 @@ export const InfoSection = ({ product }: { product: Product }) => {
 
         <Typography
           variant={"h4"}
-          className="dark:text-text-dark font-bold line-through"
+          className="dark:text-text-body font-bold line-through"
         >
           Rs.{" "}
           {((product?.price * product?.discountPercentage) / 100).toFixed(2)}
